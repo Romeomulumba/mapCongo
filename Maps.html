@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ville de Kikwit Maps</title>
+	 
+	<style type="text/css">
+     
+     #conteneur
+     {
+     	width:750px;
+     	
+    
+     }
+
+
+     #haut
+     {
+     	width:750px;
+     	height:150px;
+     	background:#33ccff url(bannier.jpg) top left no-repeat
+;
+     	padding:0px;
+
+     }
+
+     #gauche
+     {  
+     	float:left;
+     	width:149px;
+     	height:200px;
+     	background:#2c4762;
+     	padding:2px;
+     	margin-top:4px;
+
+     }
+     #milieu
+     {
+     	float:left;
+     	width:580px;
+     	height:500px;
+     	background-color:#2c4762;
+     	padding:6px;
+     	margin-top:5px;
+     	
+     
+
+     }
+
+     #bas
+     {  
+     	clear:both;
+     	width:750px;
+     	height:20px;
+     	background-color:#000000;
+     	color:white;
+     	margin-clear:5px;
+     }
+
+     #menu ul 
+     {
+     	text-align:center;
+
+     }
+     #menu li 
+     {  
+     	list-style-type:none;
+     	text-align:center;
+
+     }
+
+      #menu li a
+     {  
+     	color:white;
+     	text-decoration:none;
+     	text-align:left;
+        display:block;
+        font-weight:bold;
+        text-indent:1em;
+        line-height:1.4em;
+
+     }
+
+      #menu li a:hover
+     {  
+     	display:block;
+     	text-decoration:underline;
+     	background-color:#1ab7ea;
+
+     }
+
+     #cartemaps
+     {
+     	width:575px;
+     	height:300px;
+     	background-color:#fff;
+     	margin-top:200px;
+     }
+
+     #Actualite
+     {
+     	width:149px;
+     	height:290px;
+     	background-color:#1ab7ea;
+     	margin-top:213px;
+     	padding:2px;
+     	
+     	
+     }
+
+     #blockgauche
+     {
+     	width:149px;
+     	height:500px;
+     	background-color:#fff;
+     	float:left;
+     	padding:0px;
+     	margin-right:8px;
+
+     }
+
+     #milieu + #bas
+     {
+     	margin-top:4px;
+     }
+
+     #image1
+     {
+     	width:185px;
+     	height:150px;
+     	background-color:#fff;
+     	display:;
+     	float:left;
+     	margin-right:10px;
+
+     }
+     #image2
+     {
+     	width:185px;
+     	height:150px;
+     	background-color:#fff;
+     	float:left;
+     	margin-right:10px;
+
+     }
+     #image3
+     {
+     	width:185px;
+     	height:150px;
+     	background-color:#fff;
+     	float:left;
+
+     }
+
+     #blockimage
+     {
+     	position:relative;
+     	width:550px;
+     	height:190px;
+     	padding-right:5px;
+     	margin-top:5px;
+
+     }
+
+     h1
+     {
+     	margin-top:15px;
+     }
+   
+	</style>
+	 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+       <script>
+    
+    function init()
+     {
+     	var mapDiv= docment.getElementById("cartemaps");
+     	var mapOptions= {
+
+     		center: news google.maps.LatLng(-5.0409800,  18.8161900),
+     		zoom:15,
+     		mapTypeId: google.maps.MapTypeId.ROADMAP
+     	};
+
+     	var map= new google.maps.map(mapDiv, mapOptions);
+     }
+
+     window.onload= init;
+
+
+     </script>
+
+
+
+</head>
+<body>
+ <center><div id="conteneur">
+
+    <div id="haut">
+   
+     <center><h1>La carte geographique de la ville de Kikwit</h1></center>
+     </div>
+     <div id="blockgauche">
+    <div id="gauche">
+    
+       <ul id="menu">
+    	<li><a href="index.html">Accuiel</a></li>   
+    	<li><a href="Maps.html">Maps</a></li>
+    	<li><a href="Cantact.html">Contact</a></li>
+      </ul>
+     
+    </div>
+
+     <div id="Actualite">Actualite<br>
+   
+    </div>
+
+     </div>
+   
+    <div id="milieu">
+
+  <div id="blocimage">
+  <div id="image1">
+  	<img src="image1.jpg"/>
+
+  </div>
+  <div id="image2">
+  	<img src="image2.jpg"/>
+
+  </div>
+  <div id="image3">
+  	
+  	<img src="image3.jpg"/>
+  </div>
+  </div>
+    
+    <div id="cartemaps">
+
+    </div>    	
+
+
+    </div>
+    <div id="bas"><p>Copyrith Kikwit 2015</p></div>
+
+
+    </div></center>
+	 
+</body>
+</html>
